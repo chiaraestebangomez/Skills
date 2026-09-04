@@ -4,17 +4,17 @@
 
 > "El sistema debe responder las consultas de los usuarios en menos de 2 segundos durante condiciones normales de operación."
 
-## Atributo de qualidade identificado
+## Atributo de calidad identificado
 
 **Rendimento (Performance)**
 
-## Cenário SEI gerado
+## Escenario SEI generado
 
 | Fuente del estímulo | Estímulo | Entorno | Artefacto | Respuesta | Medida de respuesta |
 |---|---|---|---|---|---|
 | Usuario | Realiza una consulta al sistema | Operación normal | Sistema completo | Procesa la consulta y retorna la respuesta | La consulta debe responderse en menos de 2 segundos |
 
-## Avaliação contra os critérios de aprovação
+## Evaluación contra los criterios de aprobación
 
 | # | Critério | Resultado | Notas |
 |---|---|---|---|
