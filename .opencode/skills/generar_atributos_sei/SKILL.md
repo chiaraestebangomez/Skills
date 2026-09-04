@@ -21,15 +21,32 @@ Cuando el usuario solicite:
 
 ## Modo de operacion
 
-- **Con contexto**: Si el usuario proporciona el atributo de calidad y contexto del
-  sistema, genero el escenario directamente.
-- **Sin contexto**: Si falta informacion esencial (atributo o contexto del sistema),
-  pregunto antes de generar.
+- **Con contexto completo**: Si el usuario proporciona el atributo de calidad
+  y contexto del sistema, genero el escenario directamente.
+- **Con contexto parcial**: Si falta informacion, identifico que falta, propongo
+  valores razonables y presento el escenario con las partes propuestas marcadas
+  explicitamente como supuestos. No me limito a preguntar.
 
-Preguntas minimas cuando falte contexto:
-1. ¿Que atributo de calidad te interesa?
-2. ¿Que tipo de sistema o dominio estas evaluando?
-3. ¿Hay restricciones o ambientes especificos?
+## Manejo de informacion faltante
+
+Cuando el usuario no proporciona toda la informacion necesaria:
+
+1. **Identificar** que partes del escenario estan presentes y cuales faltan.
+2. **Proponer** valores posibles para completar las partes faltantes, basandome
+   en el contexto disponible y en buenas practicas del dominio.
+3. **No presentar** los supuestos como informacion proporcionada por el usuario.
+4. **Marcar explicitamente** cada valor propuesto con el prefijo `[Supuesto]`
+   para que el usuario pueda identificar y corregir facilmente lo que no
+   corresponda.
+
+Ejemplo de formato:
+
+| Fuente del estimulo       | Estimulo                | Entorno   | Artefacto         | Respuesta              | Medida de respuesta      |
+|---------------------------|-------------------------|-----------|-------------------|------------------------|--------------------------|
+| [Supuesto] Usuario final  | Peticion HTTP GET       | Normal    | [Supuesto] API    | Retorna 200 OK         | [Supuesto] < 200ms       |
+
+Si el usuario no especifica el atributo de calidad, preguntar ese unico dato
+antes de generar, ya que es el eje central del escenario.
 
 ## Template SEI — Seis partes
 
