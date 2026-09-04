@@ -74,6 +74,19 @@ antes de generar, ya que es el eje central del escenario.
 | Portabilidad      | Facilidad de migrar el sistema a otro entorno o plataforma            |
 | Compatibilidad    | Coexistencia con otros sistemas sin conflictos de recursos            |
 
+## Ejemplos de referencia
+
+Los archivos ubicados en `examples/` contienen escenarios SEI correctamente resueltos.
+
+Utilizarlos como referencia para:
+- mantener la estructura de seis partes;
+- identificar el nivel de especificidad esperado;
+- distinguir estímulos de respuestas;
+- formular medidas de respuesta cuantificables;
+- mantener coherencia entre atributo, estímulo y respuesta.
+
+Los ejemplos son referencias de formato y criterio, no deben copiarse literalmente cuando se resuelve un nuevo escenario.
+
 ## Formato de salida
 
 Presentar cada escenario en una tabla markdown con 6 columnas:
