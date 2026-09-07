@@ -21,6 +21,31 @@ Todo Árbol de Utilidad generado debe seguir estrictamente esta jerarquía de 4 
 5. **Nivel 4 (Escenario de Calidad)**: Descripción del escenario concreto. Debe incluir:
    - **Estímulo**: El evento que llega al sistema.
    - **Respuesta Medible**: Métrica cuantitativa verificable (ej. "< 1 segundo", "99.999%").
+  
+## Material complementario
+
+El material ubicado en `../../references/material-sei.pdf` se utiliza como
+referencia conceptual para orientar la construcción del Árbol de Utilidad
+según el enfoque ATAM.
+
+Utilizar este material para:
+
+* comprender la finalidad y estructura de un Árbol de Utilidad;
+* organizar los atributos de calidad y sus respectivos escenarios;
+* identificar los escenarios relevantes para la evaluación arquitectónica;
+* orientar la priorización de los escenarios según su importancia para el
+  negocio y su dificultad arquitectónica;
+* mantener la relación entre los atributos de calidad y los escenarios SEI
+  utilizados como entrada.
+
+El material complementario debe utilizarse como guía conceptual y no como
+fuente para inventar información específica del sistema proporcionada por
+el usuario.
+
+Cuando la información necesaria para construir o priorizar el árbol no sea
+proporcionada, la skill puede realizar supuestos razonables, pero debe
+identificarlos explícitamente como `[Supuesto]`.
+
 
 ## Formato de Salida Requerido
 
