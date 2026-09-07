@@ -87,6 +87,26 @@ Utilizarlos como referencia para:
 
 Los ejemplos son referencias de formato y criterio, no deben copiarse literalmente cuando se resuelve un nuevo escenario.
 
+## Material complementario
+
+El material ubicado en `../../references/material-sei.pdf` se utiliza como
+referencia conceptual para orientar la generación de escenarios de atributos
+de calidad.
+
+Utilizar este material para:
+- comprender y aplicar correctamente el template SEI de seis partes;
+- identificar y caracterizar los atributos de calidad;
+- formular escenarios de calidad de manera consistente;
+- determinar qué información corresponde a cada una de las seis partes;
+- orientar la definición de medidas de respuesta verificables.
+
+El material complementario debe utilizarse como guía y no como fuente para
+inventar información específica del sistema proporcionado por el usuario.
+
+Cuando el contexto proporcionado por el usuario sea insuficiente, los valores
+propuestos deben seguir las reglas indicadas en la sección "Manejo de
+información faltante" y marcarse explícitamente como `[Supuesto]`.
+
 ## Formato de salida
 
 Presentar cada escenario en una tabla markdown con 6 columnas:
@@ -107,3 +127,5 @@ Antes de entregar un escenario, verificar que:
 4. La medida de respuesta es cuantificable o al menos verificable.
 5. Existe coherencia entre el estimulo y la respuesta del sistema.
 6. El artefacto apunta a un componente o subsistema razonable.
+
+
