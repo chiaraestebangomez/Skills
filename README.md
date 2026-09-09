@@ -19,7 +19,7 @@ Comenzamos enviándole un *prompt* a OpenCode en el que detallamos las siguiente
 
 Una vez que OpenCode devolvió la primera versión de la *skill*, evaluamos y debatimos lo generado. Formulamos *prompts* de corrección para ajustar los aspectos erróneos o mal planteados, hasta obtener una versión que consideramos correcta.
 
-Con la *skill* definida, procedimos a cargarle ejemplos generados por IA junto con sus respectivas salidas esperadas (*few-shot prompting*). Se incluyeron cuatro ejemplos correspondientes a distintos atributos de calidad: **Disponibilidad**, **Modificabilidad**, **Performance** y **Seguridad**.
+Con la *skill* definida, procedimos a cargarle ejemplos generados por IA junto con sus respectivas salidas esperadas. Se incluyeron cuatro ejemplos correspondientes a distintos atributos de calidad: **Disponibilidad**, **Modificabilidad**, **Performance** y **Seguridad**.
 
 ---
 
@@ -32,7 +32,7 @@ A continuación, pasamos a la fase de pruebas, la cual se dividió en dos etapas
    * **Escenario incompleto:** La *skill* debía realizar los supuestos necesarios para completar el escenario.
    * **Escenario con información insuficiente:** La *skill* debía solicitar información adicional al usuario antes de generar la respuesta.
 
-   > 📁 *Todas las salidas resultantes se almacenaron en el directorio `/results`.*
+   > 📁 *Todas las salidas resultantes se almacenaron en el directorio results.*
 
 2. **Pruebas con ejercicios del Trabajo Práctico 3 (TP3):** Se ingresaron ejercicios del práctico y se comparó la salida de la *skill* con las resoluciones elaboradas previamente por el equipo (sin asistencia de la IA).
 
